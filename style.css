@@ -61,7 +61,7 @@ nav ul li a:hover::after{
 /* -------------------- about -------------------- */
 
 #about{
-    padding: 80px 0;
+    padding: 20px 0;
 }
 
 .row{
@@ -76,7 +76,7 @@ nav ul li a:hover::after{
 
 .about-col-1 img{
     width: 100%;
-    border-radius: 200px;
+    border-radius: 500px;
     outline: 2px solid white;
 }
 
@@ -91,8 +91,9 @@ nav ul li a:hover::after{
 }
 
 .about-text p{
-    font-size: 25px;
-    color:white;
+    font-size: 30px;
+    font-weight: 100;
+    color:rgb(240, 240, 240);
 }
 
 .about-text name{
@@ -100,4 +101,145 @@ nav ul li a:hover::after{
     color:#ff004f;
 }
 
+/* -------------------- Portfolio -------------------- */
 
+#portfolio{
+    padding: 300px 0;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.port-col-1{
+    flex-basis: 35%;
+}
+
+.port-col-1 img{
+    width: 100%;
+    border-radius: 50px;
+    outline: 2px solid white;
+}
+
+.port-col-2{
+    flex-basis: 60%;
+}
+
+.port-text h1{
+    font-size: 60px;
+    font-weight: bold;
+    color:white;
+}
+
+.port-text p{
+    font-size: 20px;
+    color:rgb(240, 240, 240);
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 350px;
+    font-size: 64px;
+    font-weight: 750;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0%;
+    height: 20px;
+    background: #ff004f;
+    position: absolute;
+    left: -2;
+    bottom: -1px;
+    transition: 0.5s;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.tab-links:hover::after{
+    width: 110%;
+}
+
+.tab-links.active::after{
+    width: 110%;
+}
+
+.tab-contents{
+    display: none;
+    animation: fadeEffect 1s;
+}
+
+.tab-pictures{
+    display: none;
+    animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+/* -------------------- Contact Page -------------------- */
+
+#contact{
+    padding: 100px 0;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-1{
+    flex-basis: 35%;
+}
+
+.contact-1 img{
+    width: 100%;
+    border-radius: 50px;
+    outline: 2px solid white;
+}
+
+.contact-2{
+    flex-basis: 60%;
+}
+
+.header{
+    margin-top: 200px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color:white;
+}
+
+.header contact{
+    font-size: 60px;
+    color:#ff004f;
+}
+
+.links{
+    width: 400px;
+    height: 100px;
+    margin-left: 200px;
+    margin-top: 100px;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #ff004f;
+    border-radius: 20px;
+    border: none;
+    font-size: 40px;
+    font-weight: 200;
+    color: white;
+    cursor: pointer;
+}

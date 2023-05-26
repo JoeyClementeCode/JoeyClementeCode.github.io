@@ -27,20 +27,72 @@
         <div id="about">
             <div class="container">
                 <div class="row">
-                    <div class="about-col-1">
-                        <img src="images/joey.png">
-                    </div>
                     <div class="about-col-2">
                         <div class="about-text">
                             <h1>Hi! I'm <name>Joey.</name></h1>
                             <p>Sophomore Game Programming Major at Champlain College in Burlington, Vermont. Fluent in four programming languages and learning three more. Experienced in multiple applications related to the game development field (e.g. Unity, UE4, and general programming). On top of my programming expertise, I also have a knack for talking and working with people. I have spent the last 2 years working as an Esports Coach for Cloud9 where I work with 12-18 year-olds in a Summer Camp focused on the game Valorant. I have been involved at an integral level in the creation and stability of the Champlain College Varsity esports system where I have been a player and a coach for the last 2 years.</p>
                         </div>
                     </div>
+                    <div class="about-col-1">
+                        <img src="images/joey.png">
+                    </div>
                 </div>
             </div>
         </div>
+        <div id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="port-col-1">
+                        <img src="images/joey.png" class = "tab-pictures" id = "pic1">
+                        <img src="images/home.png" class = "tab-pictures" id = "pic2">
+                        <img src="images/joey.png" class = "tab-pictures" id = "pic3">
+                    </div>
+                    <div class="port-col-2">
+                        <div class="port-text">
+                            <h1>What I Am Working On</h1>
 
+                            <div class="tab-titles">
+                                <p class="tab-links" onclick="opentab(event, 'boundless', 'pic1')" id = "defaultOpen">Boundless Blade</p>
+                                <p class="tab-links" onclick="opentab(event, 'unreal', 'pic2')">Unreal</p>
+                                <p class="tab-links" onclick="opentab(event, 'jams', 'pic3')">Game Jams</p>
+                            </div>
 
+                            <div id = "boundless" class="tab-contents">
+                                <p>Boundless.</p>
+                                <button class="learn">Learn More</button>
+                            </div>
+                            <div id = "unreal" class="tab-contents">
+                                <p>Unreal.</p>
+                                <button class="learn">Learn More</button>
+                            </div>
+                            <div id = "jams" class="tab-contents">
+                                <p>Malfunction.</p>
+                                <button class="learn">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-2">
+                        <div class="header">
+                            <h1><contact>Contact</contact> Me!</h1>
+                        </div>
+                            <a href="JoeyClementeResume.pdf" download><button class="links">Resume</button></a>
+                            <a href="https://github.com/JoeyClementeCode"><button class="links">Github</button></a>
+                            <a href="https://www.linkedin.com/in/joey-clemente/"><button class="links">Linkedin</button></a>
+                            <a href="https://joeyclemente.itch.io/"><button class="links">Itch.io</button></a>
+                    </div>
+                    <div class="contact-1">
+                        <img src="images/W.jpg">
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </body>
 
     <script src="script.js"></script>
