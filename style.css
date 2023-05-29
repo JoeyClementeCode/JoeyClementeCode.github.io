@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color:rgb(55, 63, 81);
     font-family: "Raleway", sans-serif;
@@ -28,6 +32,10 @@ nav{
     font-size: 20px;
 }
 
+.title joey{
+    color: rgb(32, 163, 158);
+}
+
 nav ul li{
     display: inline-block;
     list-style: none;
@@ -47,9 +55,9 @@ nav ul li a::after{
     content: '';
     width: 0%;
     height: 20px;
-    background: rgb(239, 91, 91);
+    background: rgb(32, 163, 158);
     position: absolute;
-    left: -2;
+    left: -4;
     bottom: -1px;
     transition: 0.5s;
     z-index: -1;
@@ -81,6 +89,7 @@ nav ul li a:hover::after{
 .about-col-1 img{
     width: 100%;
     border-radius: 500px;
+    animation: fadeEffect 3s;
 }
 
 .about-col-2{
@@ -105,6 +114,7 @@ nav ul li a:hover::after{
     font-family: "Raleway", sans-serif;
     font-weight: 200;
     color:rgb(240, 240, 240);
+    animation: fadeEffect 3s;
 }
 
 .about-text name{
@@ -192,6 +202,7 @@ nav ul li a:hover::after{
 }
 
 .tab-pictures{
+    width: 100%;
     display: none;
     animation: fadeEffect 1s;
 }
