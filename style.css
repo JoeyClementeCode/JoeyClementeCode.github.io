@@ -3,7 +3,7 @@ html{
 }
 
 body{
-    background-color:#0b0612;
+    background-color:#120a1d;
     font-family: "Raleway", sans-serif;
 }
 
@@ -102,7 +102,7 @@ nav ul li a:hover::after{
     width: 200px;
     height: 50px;
     margin-top: 25px;
-    background-color: #120a1d;
+    background-color: #0b0612;
     border-radius: 3px;
     border: none;
     font-size: 30px;
@@ -264,7 +264,7 @@ nav ul li a:hover::after{
 /* -------------------- about -------------------- */
 
 #about{
-    background-color: #120a1d;
+    background-color: #0b0612;
     padding: 100px 0;
 }
 
@@ -325,33 +325,15 @@ nav ul li a:hover::after{
 
 #contact{
     padding: 100px 0;
-    background-color: #0b0612;
 }
 
 .contact-row{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 20vh;
 }
 
-.contact-1{
-    flex-basis: 40%;
-    padding: 30px;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-1 img{
-    width: 80%;
-    height: 100%;
-    border-radius: 50px;
-    filter: drop-shadow(0px 0px 5px rgb(32, 163, 158));
-}
-
-.contact-2{
-    flex-basis: 50%;
-}
 
 .header{
     text-align: center;
@@ -374,7 +356,7 @@ nav ul li a:hover::after{
     align-items: right;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: #120a1d;
+    background-color: #0b0612;
     border-radius: 3px;
     border: none;
     font-size: 30px;
@@ -405,7 +387,7 @@ nav ul li a:hover::after{
     color:rgb(240, 240, 240);
 }
 
-#projects h1{
+#info h1{
     margin-top: 25px;
     font-size: 60px;
     font-weight: bold;
@@ -413,7 +395,7 @@ nav ul li a:hover::after{
 
 }
 
-#projects h3{
+#info h3{
     margin-top: 25px;
     font-size: 30px;
     font-weight: bold;
@@ -421,15 +403,46 @@ nav ul li a:hover::after{
 
 }
 
-#projects h4{
+#info h4{
     margin-top: 25px;
     font-size: 18px;
     font-weight: bold;
     color:rgb(240, 240, 240);
 
 }
+.description-text h2{
+    text-decoration: underline;
+}
 
 .description-text p{
     margin-left: 130;
+    margin-right: 130;
     text-align: left;
+}
+
+.background-text h2{
+    text-decoration: underline;
+}
+
+.background-text p{
+    margin-left: 130;
+    margin-right: 130;
+    text-align: left;
+}
+
+.learned-text h2{
+    text-decoration: underline;
+}
+
+.learned-text li{
+    list-style: decimal;
+    margin-left: 130;
+    margin-right: 130;
+    margin-bottom: 50;
+    text-align: left;
+}
+
+#info learned-titles{
+    font-size: 18px;
+    font-weight: bold;
 }

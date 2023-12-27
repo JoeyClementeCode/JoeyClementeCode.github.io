@@ -29,28 +29,35 @@
             <h1>Trochoidal Wave Generation</h1>
         </div>
         <div class = "team-text">
-            <h2>Team: Solo</h2>
+            <h2>Team: Solo | Time Period: 5 Weeks</h2>
         </div>
         <div class = "tools-section">
-            <h3>Tools Used</h3>
-            <p>Unity, C#, HLSL, Git</p>
+            <h3>Tools Used : Unity, C#, HLSL, Git</h3>
+        </div>
+        <div class = "description-text">
+            <h2>Description</h2>
+            <p>This Trochoidal Wave and Buoyancy project is a collaboration with Jake Baranowski that demonstrates the use of mathematical formulas to make a realistic wave and buoyancy simulation. </p>
         </div>
         <div class = "picture1">
             <img src="images/joey.png">
             <img src="images/joey.png">
         </div>
-        <div class = "description-text">
-            <h2>Description</h2>
-            <p>Description Description Description</p>
+        <div class = "background-text">
+            <h2>Background</h2>
+            <p>This project was originally made for our Game AI final where we had free reign to choose any topic that we wanted. We decided to play to our strengths and choose something that involved both physics and graphics. I took the lead in the graphics department and made a working Gerstner (Trochoidal) wave simulation in basic HLSL and also in Shader Graph to try to expand functionality. Jake took the head role on the physics side and created a basic buoyancy system using Unity’s rigidbodies.</p>
         </div>
         <div class = "picture2">
             <img src="images/joey.png">
         </div>
-        <div class = "challenges-text">
-            <h2>Challenges</h2>
-            <p>Challenges Challenges Challenges</p>
+        <div class = "learned-text">
+            <h2>What I Learned</h2>
+            <ul>
+                <li><learned-titles>Optimization is KING:</learned-titles> As much as these Trochoidal wave algorithms are fantastic for making realistic simulations, they are not cheap to produce. The more waves you add to try to extend the illusion of realism, the time complexity of the algorithm becomes more exhausting on the hardware. This was especially difficult when trying to do those computations parallel across the CPU (Buoyancy) and GPU (Wave Shader). Learning to optimize through the use of compute shaders or using more efficient algorithms to take care of the calculations, such as Fast Fourier Transform (FFT), will benefit my overall workflow and make my projects more performant.</li>
+                <li><learned-titles>Keep Tinkering:</learned-titles> Find the values that work. Don’t settle for mediocre if there is always room for improvement, whether that be with performance, the visual look, or even just the feel of a shader. I spent many hours tinkering with the values to find something that I was happy with. To be completely honest, I could mess with it for many more hours to find the exact right color or steepness to the foam, there is so much freedom, there is no reason not to take your time to make it right.</li>
+                <li><learned-titles>Use Your Resources/Don’t be Afraid to Ask Questions:</learned-titles> This project I struggled with a bunch of new concepts from dynamically calculating normals to working with raw math in Shader Graph. Every tough task that I faced I overcame, how did I do it? I didn’t let my ego get to me and allowed myself to be vulnerable to finding help. I went to my Graphics professor (shoutout Eric Winebrenner), I went on google, forums, discord threads, talked to several peers and graduates for feedback and help. This helped me really understand what I was trying to accomplish from a foundational level and allowed me to get results that I could be happy with.</li>            
+            </ul>
         </div>
-
+        <a href="JoeyClementeResume.pdf" download><button class="links">Download Build</button></a>
     </div>
 
     <footer>
