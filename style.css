@@ -190,7 +190,7 @@ nav ul li a:hover::after{
 }
 
 .featured-col-1 img{
-    width: 30%;
+    width: 40%;
     border-radius: 20px;
     animation: fadeEffect 3s;
     filter: drop-shadow(0px 0px 5px rgb(32, 163, 158));
@@ -202,7 +202,7 @@ nav ul li a:hover::after{
 }
 
 .featured-col-2 img{
-    width: 30%;
+    width: 40%;
     border-radius: 20px;
     animation: fadeEffect 3s;
     filter: drop-shadow(0px 0px 5px rgb(32, 163, 158));
@@ -259,6 +259,12 @@ nav ul li a:hover::after{
     row-gap: 15px;
     column-gap: 15px;
     margin-top: 50px;
+    filter: drop-shadow(0px 0px 5px rgb(32, 163, 158));
+}
+
+.project-pictures img{
+    width: 400px;
+    height: 250px;
 }
 
 /* -------------------- about -------------------- */
@@ -410,6 +416,15 @@ nav ul li a:hover::after{
     color:rgb(240, 240, 240);
 
 }
+
+.picture1 img{
+    width: 40%;
+}
+
+.picture2 video{
+    width: 70%;
+}
+
 .description-text h2{
     text-decoration: underline;
 }
