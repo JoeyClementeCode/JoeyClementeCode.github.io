@@ -9,101 +9,100 @@
     </head>
 
     <body>
+    <header>
         <div id="header">
             <div class="container">
                 <nav>
+                    <img src="images/websitelogo.png" alt="logo" class="logo">
                     <ul>
-                        <li><a href="#about">About Me</a></li>
-                        <li><a href="#port">Portfolio</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
-        <div id="title">
-            <div class="main-title">
-                <h1>Joey Clemente</h1>
-            </div>
-            <div class="sub-title">
-                <p>Gameplay Programmer</p>
-            </div>
-        </div>
-        <div id="portfolio">
-            <div class="port-header" id = port>
-                <h1>Technical <showcase>Showcase</showcase></h1>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="port-col-1">
-                        <img src="images/boundless.png" class = "tab-pictures" id = "pic1">
-                        <img src="images/unreal.png" class = "tab-pictures" id = "pic2">
-                        <img src="images/malfunction.png" class = "tab-pictures" id = "pic3">
+    </header>
+        <div id = "featured-projects">
+            <h1>Hi! I'm <name>Joey.</name></h1>
+            <h3>I'm a Graphics Programmer.</h3>
+            <div class = "wrapper">
+                <div class="track">
+                    <div class="featured">
+                        <video autoplay muted loop>
+                            <source src="images/terrainloop.mp4" type="video/mp4">
+                        </video>
                     </div>
-                    <div class="port-col-2">
-                        <div class="port-text">
-                            <div class="tab-titles">
-                                <p class="tab-links" onclick="opentab(event, 'boundless', 'pic1')" id = "defaultOpen">Boundless Blade</p>
-                                <p class="tab-links" onclick="opentab(event, 'unreal', 'pic2')">Unreal</p>
-                                <p class="tab-links" onclick="opentab(event, 'jams', 'pic3')">Game Jams</p>
-                            </div>
-                            <div id = "boundless" class="tab-contents">
-                                <div class="tag-holder">
-                                    <p class="tag-engine">Unity</p>
-                                    <p class="tag-language">C#</p>
-                                    <p class="tag-skills">Gameplay</p>
-                                    <p class="tag-skills">Systems</p>
-                                    <p class="tag-skills">UI</p>
-                                    <p class="tag-skills">Agile</p>
-                                </div>
-                                <p>What it is: Boundless Blade is a 2D top down endless horde game that was made for our Sophomore Studio 1 class. The game revolves around a ronin fighting off waves of yakuza portraying themselves as Oni. Players have access to attacking and blocking through drawing with a mouse or a drawing tablet.</p>
-                                <p>What I did:</p>
-                                <ul class = content-bullets>
-                                    <li>Implemented base framework for every system in the entire game using Unity and C#.</li>
-                                    <li>Designed and implemented a rarity and upgrade system using SerializedObjects and C#.</li>
-                                    <li>Implemented UI/transitions using external libraries such as LeanTween.</li>
-                                    <li>Create documentation that revolved around the technical state of the game.</li>
-                                </ul>
-                                <p>Team Size: 6</p>
-                                <p>Time Period: 1.5 months (6 weeks, March 2023 - May 2023) </p>
-                            </div>
-                            <div id = "unreal" class="tab-contents">
-                                <div class="tag-holder">
-                                    <p class="tag-engine">Unreal Engine 5</p>
-                                    <p class="tag-language">C++</p>
-                                    <p class="tag-language">Blueprints</p>
-                                    <p class="tag-skills">Gameplay</p>
-                                    <p class="tag-skills">Systems</p>
-                                    <p class="tag-skills">UI</p>
-                                </div>
-                                <p>Unreal is an engine that I have been working hard in to really increase my knowledge everyday to give myself a wider range of things that I can make. My general understanding of C++ has given me a good foundation, however being able to use it in tandem with Blueprints and Unreals API to create unique gameplay experiences is something I have been striving to do.</p>
-                                <p>One example of my unreal prowess is this first person lock system. This lock system was inspired by games such as Dead By Daylight, Among Us, and Outlast Trials. It incorporates different elements of a *mini* gameplay loop in a well organized and polished system that leaves room for expansion.</p>
-                            </div>
-                            <div id = "jams" class="tab-contents">
-                                <div class="tag-holder">
-                                    <p class="tag-engine">Unity</p>
-                                    <p class="tag-language">C#</p>
-                                    <p class="tag-skills">Systems</p>
-                                    <p class="tag-skills">UI</p>
-                                </div>
-                                <p>One game jam I have done in recent time was for the UNC Chapel Hill game jam for college students. This jam was a week long and was what I spent a majority of my time on during Spring Break of 2023. The prompt was "Dont do that!" and I made a 2D top down puzzle game called Malfunction in which I actually won the jam.</p>
-                                <p>Although the general gameplay was simple, I really tried using this jam as a time for testing out new things such as particle systems and story branching which proved to be a fun task. The game ended up having 3 different endings based off a point system and the game was well polish and well recieved.</p>
-                                <p>Game Jams have been a great way to really diversify my use of technologies and different techniques. Having to complete a project under short time constraints really tested my time and project management skills as well as my technical abilities to make sure I can come away with a good product.</p>
-                            </div>
-                        </div>
+                    <div class="featured">
+                        <video autoplay muted loop>
+                            <source src="images/BladeTrim.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="featured">
+                        <video autoplay muted loop>
+                            <source src="images/Buyoyancy.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="featured">
+                        <video autoplay muted loop>
+                            <source src="images/Modular.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="featured">
+                        <video autoplay muted loop>
+                            <source src="images/terrainloop.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="featured">
+                        <video autoplay muted loop>
+                            <source src="images/BladeTrim.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="featured">
+                        <video autoplay muted loop>
+                            <source src="images/Buyoyancy.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="featured">
+                        <video autoplay muted loop>
+                            <source src="images/Modular.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </div>
             </div>
+            <h2>Some <projects>Highlights</projects></h2>
+            <div class="featured-container">
+                <div class="featured-row">
+                    <div class="featured-col-1">
+                        <img src="images/trichodial2.PNG">
+                        <div class="featured-text">
+                            <p>Trochoidal Waves and Buoyancy</p>
+                            <a href="project1.html"><button class="project-button">Learn More</button></a>
+                        </div>
+                    </div>
+                    <div class="featured-col-2">
+                        <img src="images/terrain2.PNG">
+                        <div class="featured-text">
+                            <p>OpenGL Terrain Generation</p>
+                            <a href="project3.html"><button class="project-button">Learn More</button></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <h2>Check out all of my projects in depth</h2>
+            <a href="projects.html"><button class="project-button">Projects</button></a>
         </div>
         <div id="about">
-            <div class="container">
+            <div class="about-container">
                 <div class="about-row">
                     <div class="about-col-2">
                         <div class="background">
                         </div>
                         <div class="about-text">
-                            <h1>Hi! I'm <name>Joey.</name></h1>
                             <p>I am currently a Junior, studying Game Programming at Champlain College with ranging experience in both the indie and collegiate levels.</p>
-                            <p>I am currently pursuing my passion of create gameplay experiences. I have been able to accomplish this on my own through game jams and other solo projects, but also in team projects ranging from 3-8 members across all different disciplines. If you are interested in any of my work, click on the tabs and links below to find out more! </p>
+                            <p>My strong suit is creating graphics for games. I have been able to accomplish this on my own through game jams and other solo projects, but also in team projects ranging from 3-8 members across all different disciplines. If you are interested in any of my work, click on the tabs or links below to find out more! </p>
                         </div>
                     </div>
                     <div class="about-col-1">
@@ -113,24 +112,28 @@
             </div>
         </div>
         <div id="contact">
-            <div class="container">
+            <div class="contact-container">
                 <div class="contact-row">
                     <div class="contact-2">
                         <div class="header">
-                            <h1><contact>Contact</contact> Me!</h1>
+                            <h1><contact>Contact</contact> Me</h1>
                         </div>
-                            <a href="JoeyClementeResume.pdf" download><button class="links">Resume</button></a>
+                            <a href="Resume-Joey Clemente.pdf" download><button class="links">Resume</button></a>
                             <a href="https://github.com/JoeyClementeCode"><button class="links">Github</button></a>
                             <a href="https://www.linkedin.com/in/joey-clemente/"><button class="links">Linkedin</button></a>
                             <a href="https://joeyclemente.itch.io/"><button class="links">Itch.io</button></a>
                     </div>
-                    <div class="contact-1">
-                        <img src="images/W.jpg">
-                    </div>
                 </div>
-
             </div>
         </div>
+
+        <footer>
+            <div id="foot">
+                <div class="footer">
+                    <p>Website Made By Joey Clemente</p>
+                </div>
+            </div>
+        </footer>
     </body>
 
     <script src="script.js"></script>
