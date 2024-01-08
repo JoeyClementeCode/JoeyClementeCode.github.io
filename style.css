@@ -31,8 +31,8 @@ nav{
 }
 
 .logo{
-    width: 100px;
-    height: 100px;
+    width: 15%;
+    height: 15%;
 }
 
 nav ul li{
@@ -74,7 +74,7 @@ nav ul li a:hover::after{
 
 #featured-projects h1{
     margin-top: 50px;
-    font-size: 60px;
+    font-size: 80px;
     font-weight: bold;
     color:rgb(240, 240, 240);
     text-align: center;
@@ -93,7 +93,7 @@ nav ul li a:hover::after{
 }
 
 #featured-projects name{
-    font-size: 60px;
+    font-size: 80px;
     color:rgb(32, 163, 158);
 }
 
@@ -129,23 +129,23 @@ nav ul li a:hover::after{
 
 .wrapper .track{
     display: flex;
-    width: calc(350px * 6);
+    width: calc(500px * 8);
     animation: scroll 17s 0.5s linear infinite;
 }
 
-.wrapper .featured{
-    width: 350px;
+.wrapper .featured video{
+    width: 500px;
 }
 
-.wrapper .featured img{
-    height: 350px;
+.wrapper .featured video{
+    height: 500px;
 }
 
 .wrapper:before, .wrapper:after{
     content: "";
     position: absolute;
-    height: 350px;
-    width: 350px;
+    height: 500px;
+    width: 500px;
     z-index: 2;
 }
 
@@ -243,8 +243,8 @@ nav ul li a:hover::after{
 }
 
 #projects h4{
-    margin-top: 25px;
-    font-size: 18px;
+    margin-top: 250px;
+    font-size: 24px;
     font-weight: bold;
     color:rgb(240, 240, 240);
 
@@ -254,17 +254,17 @@ nav ul li a:hover::after{
 .grid{
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(2, 75vh);
-    grid-template-rows: repeat(2, 25vw);
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 70%);
     row-gap: 15px;
     column-gap: 15px;
     margin-top: 50px;
     filter: drop-shadow(0px 0px 5px rgb(32, 163, 158));
 }
 
-.project-pictures img{
-    width: 400px;
-    height: 250px;
+.grid img{
+    width: 80%;
+    height: 70%;
 }
 
 /* -------------------- about -------------------- */
@@ -313,7 +313,7 @@ nav ul li a:hover::after{
 }
 
 .about-text p{
-    font-size: 20px;
+    font-size: 25px;
     font-family: "Raleway", sans-serif;
     font-weight: 200;
     color:rgb(240, 240, 240);
@@ -343,13 +343,13 @@ nav ul li a:hover::after{
 
 .header{
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     color:white;
 }
 
 .header contact{
-    font-size: 60px;
+    font-size: 80px;
     color:rgb(32, 163, 158);
 }
 
@@ -417,6 +417,10 @@ nav ul li a:hover::after{
 
 }
 
+#info p{
+    font-size: 25px;
+}
+
 .picture1 img{
     width: 40%;
 }
@@ -427,20 +431,22 @@ nav ul li a:hover::after{
 
 .description-text h2{
     text-decoration: underline;
+    font-size: 30px;
 }
 
 .description-text p{
-    margin-left: 130;
+    margin-left: 180;
     margin-right: 130;
     text-align: left;
 }
 
 .background-text h2{
     text-decoration: underline;
+    font-size: 30px;
 }
 
 .background-text p{
-    margin-left: 130;
+    margin-left: 180;
     margin-right: 130;
     text-align: left;
 }
@@ -455,9 +461,11 @@ nav ul li a:hover::after{
     margin-right: 130;
     margin-bottom: 50;
     text-align: left;
+    font-size: 20px;
 }
 
 #info learned-titles{
-    font-size: 18px;
+    font-size: 25px;
     font-weight: bold;
 }
+
