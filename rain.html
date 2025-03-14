@@ -1,0 +1,86 @@
+<html>
+
+    <head>
+        <title>Joey Clemente's Website</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+    <header>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/websitelogo.png" alt="logo" class="logo">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div id="info">
+        <div class = "title-text">
+            <h1>Realistic Rain Tool UE5.5</h1>
+        </div>
+        <div class = "description-text">
+            <h2>Description</h2>
+            <p>Hi everyone, a little about this tool, this is an All-In-One rain tool that I made as a personal project in Unreal Engine 5.5. The goal of this project was to really test my shader knowledge as well as application of toolsets to be able to produce a product that was not only professional, while having the customizability to help enhance a wide variety of environments. This is an in-depth breakdown, a real showcase of the power of this is available on my Art Station: </p>
+        </div>
+        <h3>Overview</h3>
+        <p>In this read we will be splitting the tool up into 2 main sections and multiple sub-sections and cover all the bases</p>
+        <h3>Rain Master Material</h3>
+        <ul>
+            <li>Rain Drops</li>
+            <li>Rain Drips</li>
+            <li>Rain Puddles and Wind</li>
+            <li>Rain Wetness</li>
+        </ul>
+        <h3>Master Blueprint</h3>
+        <ul>
+            <li>Rain VFX/Splash Effects</li>
+            <li>Rain Presets</li>
+            <li>Dynamic Weather Changing</li>
+        </ul>
+        <div class = "rain-drops">
+            <h2>Rain Drops</h2>
+            <p></p>
+        </div>
+        <div class = "picture1">
+            <img src="images/trichodial1.PNG">
+            <img src="images/trichodial2.PNG">
+        </div>
+
+        <div class = "picture2">
+            <video autoplay muted loop>
+                <source src="images/Buyoyancy.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class = "learned-text">
+            <h2>What I Learned</h2>
+            <ul>
+                <li><learned-titles>Optimization is KING:</learned-titles> As much as these Trochoidal wave algorithms are fantastic for making realistic simulations, they are not cheap to produce. The more waves you add to try to extend the illusion of realism, the time complexity of the algorithm becomes more exhausting on the hardware. This was especially difficult when trying to do those computations parallel across the CPU (Buoyancy) and GPU (Wave Shader). Learning to optimize through the use of compute shaders or using more efficient algorithms to take care of the calculations, such as Fast Fourier Transform (FFT), will benefit my overall workflow and make my projects more performant.</li>
+                <li><learned-titles>Keep Tinkering:</learned-titles> Find the values that work. Don’t settle for mediocre if there is always room for improvement, whether that be with performance, the visual look, or even just the feel of a shader. I spent many hours tinkering with the values to find something that I was happy with. To be completely honest, I could mess with it for many more hours to find the exact right color or steepness to the foam, there is so much freedom, there is no reason not to take your time to make it right.</li>
+                <li><learned-titles>Use Your Resources/Don’t be Afraid to Ask Questions:</learned-titles> This project I struggled with a bunch of new concepts from dynamically calculating normals to working with raw math in Shader Graph. Every tough task that I faced I overcame, how did I do it? I didn’t let my ego get to me and allowed myself to be vulnerable to finding help. I went to my Graphics professor (shoutout Eric Winebrenner), I went on google, forums, discord threads, talked to several peers and graduates for feedback and help. This helped me really understand what I was trying to accomplish from a foundational level and allowed me to get results that I could be happy with.</li>            
+            </ul>
+        </div>
+        <a href="BuoyancyFinalBuild_JoeyClemente_JakeBaranowski.zip" download><button class="links">Download Build</button></a>
+    </div>
+
+    <footer>
+        <div id="foot">
+            <div class="footer">
+                <p>Website Made By Joey Clemente</p>
+            </div>
+        </div>
+    </footer>
+    </body>
+
+    <script src="script.js"></script>
+
+</html>
