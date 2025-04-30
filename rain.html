@@ -26,50 +26,59 @@
 
     <div id="info">
         <div class = "title-text">
-            <h1>Realistic Rain Tool UE5.5</h1>
+            <h1>Realistic Rain Shader UE5.5</h1>
         </div>
         <div class = "description-text">
             <h2>Description</h2>
             <p>Hi everyone, a little about this tool, this is an All-In-One rain tool that I made as a personal project in Unreal Engine 5.5. The goal of this project was to really test my shader knowledge as well as application of toolsets to be able to produce a product that was not only professional, while having the customizability to help enhance a wide variety of environments. This is an in-depth breakdown, a real showcase of the power of this is available on my Art Station: </p>
         </div>
-        <h3>Overview</h3>
-        <p>In this read we will be splitting the tool up into 2 main sections and multiple sub-sections and cover all the bases</p>
-        <h3>Rain Master Material</h3>
-        <ul>
-            <li>Rain Drops</li>
-            <li>Rain Drips</li>
-            <li>Rain Puddles and Wind</li>
-            <li>Rain Wetness</li>
-        </ul>
-        <h3>Master Blueprint</h3>
-        <ul>
-            <li>Rain VFX/Splash Effects</li>
-            <li>Rain Presets</li>
-            <li>Dynamic Weather Changing</li>
-        </ul>
-        <div class = "rain-drops">
-            <h2>Rain Drops</h2>
-            <p></p>
+        <video width="1000" height="1000" autoplay muted loop>
+            <source src="images/RainShowcaseTrimmed.mp4" type="video/mp4">
+        </video>
+        <div class = "rain-wetness">
+            <h2>Rain Wetness</h2>
+            <p>It starts with making things look wet. If you can't capture the essence of a wet surface, then the material won't feel complete.</p>
+            <p>Rain wetness affects how materials respond to rainfall, changing their appearance over time. The shader dynamically adjusts surface roughness, reflectivity, and even coloration to simulate absorption and dripping. This makes materials appear progressively wetter and helps them interact believably with light and the environment.</p>
         </div>
         <div class = "picture1">
-            <img src="images/trichodial1.PNG">
-            <img src="images/trichodial2.PNG">
+            <img src="images/WetnessEx.png">
+            <img src="images/Wetness.PNG">
         </div>
-
-        <div class = "picture2">
-            <video autoplay muted loop>
-                <source src="images/Buyoyancy.mp4" type="video/mp4">
-            </video>
+        <div class = "rain-drops">
+            <h2>Rain Drops</h2>
+            <p>One of the most obvious features of any rain tool and just rain in general is the creation of rain drops.</p>
+            <p>These are the individual droplets you see hitting an object. In the material, the rain drops are highly customizable with adjustable size, speed, and density, to simulate different intensities of rain, from light drizzle to a torrential downpour.</p>
+        </div>
+        <div class = "picture1">
+            <img src="images/DropsEx.png">
+            <img src="images/RainDrops.PNG">
+        </div>
+        <div class = "rain-sheets">
+            <h2>Rain Sheets</h2>
+            <p>Something I found to be more fun to implement rather than traditional rain drips is the idea of sheet rain.</p>
+            <p>Rain sheets simulate large volumes of falling rain seen in stormy conditions, often appearing like translucent veils. These are useful for adding depth and visual impact to scenes, especially when looking across distances. The material allows control over opacity, tiling, and falloff to integrate seamlessly with lighting and post-processing effects.</p>
+        </div>
+        <div class = "picture1">
+            <img src="images/SheetEx.png">
+            <img src="images/SheetRain.PNG">
+        </div>
+        <div class = "rain-puddles-wind">
+            <h2>Rain Puddles and Wind</h2>
+            <p>Another classic example of a very standard technique is the creation of rain puddles and the simulation of wind in those puddles.</p>
+            <p>This feature simulates the accumulation of water on surfaces and the dynamic interaction of puddles with environmental wind. It uses normal map animations and dynamic roughness blending to give the illusion of wet surfaces reacting to wind, ripples, and raindrop impacts. This enhances the realism of ground surfaces and structures during rainfall. The puddles use displacement maps as a base to allow the water to pool from the ground up and seep from the cracks of materials.</p>
+        </div>
+        <div class = "picture1">
+            <img src="images/PuddlesEx.png">
+            <img src="images/Puddles.PNG">
         </div>
         <div class = "learned-text">
             <h2>What I Learned</h2>
             <ul>
-                <li><learned-titles>Optimization is KING:</learned-titles> As much as these Trochoidal wave algorithms are fantastic for making realistic simulations, they are not cheap to produce. The more waves you add to try to extend the illusion of realism, the time complexity of the algorithm becomes more exhausting on the hardware. This was especially difficult when trying to do those computations parallel across the CPU (Buoyancy) and GPU (Wave Shader). Learning to optimize through the use of compute shaders or using more efficient algorithms to take care of the calculations, such as Fast Fourier Transform (FFT), will benefit my overall workflow and make my projects more performant.</li>
+                <li><learned-titles>Masks, Masks, Masks!:</learned-titles> This project was a testament to my shader knowledge that I have acquired over the years and what this project taught me was the importance of masks within shader code. Everything either goes through a lerp or a mask in some way shape or form to get results that work in tandem with each other.</li>
                 <li><learned-titles>Keep Tinkering:</learned-titles> Find the values that work. Don’t settle for mediocre if there is always room for improvement, whether that be with performance, the visual look, or even just the feel of a shader. I spent many hours tinkering with the values to find something that I was happy with. To be completely honest, I could mess with it for many more hours to find the exact right color or steepness to the foam, there is so much freedom, there is no reason not to take your time to make it right.</li>
-                <li><learned-titles>Use Your Resources/Don’t be Afraid to Ask Questions:</learned-titles> This project I struggled with a bunch of new concepts from dynamically calculating normals to working with raw math in Shader Graph. Every tough task that I faced I overcame, how did I do it? I didn’t let my ego get to me and allowed myself to be vulnerable to finding help. I went to my Graphics professor (shoutout Eric Winebrenner), I went on google, forums, discord threads, talked to several peers and graduates for feedback and help. This helped me really understand what I was trying to accomplish from a foundational level and allowed me to get results that I could be happy with.</li>            
+                <li><learned-titles>Use Real Life Resources:</learned-titles> Something that helped me a lot was going outside and actually looking at and taking pictures of real life rainy environments, it allowed to take a step back from the project, get some fresh air, but also some fresh inspiration.</li>            
             </ul>
         </div>
-        <a href="BuoyancyFinalBuild_JoeyClemente_JakeBaranowski.zip" download><button class="links">Download Build</button></a>
     </div>
 
     <footer>
