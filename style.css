@@ -422,7 +422,8 @@ nav ul li a:hover::after{
 }
 
 .picture1 img{
-    width: 40%;
+    max-width: 40%;
+    height: auto;
 }
 
 .picture2 video{
