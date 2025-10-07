@@ -1,0 +1,100 @@
+<html>
+
+    <head>
+        <title>Joey Clemente's Website</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+    <header>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/websitelogo.png" alt="logo" class="logo">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div id="info">
+        <div class = "title-text">
+            <h1>Forest Stream</h1>
+        </div>
+        <div class = "description-text">
+            <h2>Description</h2>
+            <p>Hi everyone, this is a showcase and deep dive into my PBL lighting study as well as the new white water simulations in UE 5.6 while utilizing lighting optimizations I have learned for Unreal Engine 5. </p>
+        </div>
+        <div class = "geometry">
+            <h2>Showcase</h2>
+            <p>Daytime</p>
+            <div class = "picturebig">
+                <img src="images/DayScreenshotFinal.png">
+            </div>
+            <p>Evening</p>
+            <div class = "picturebig">
+                <img src="images/EveningScreenshotFinal.png">
+            </div>
+            <p>Night</p>
+            <div class = "picturebig">
+                <img src="images/NightFinal.png">
+            </div>
+            <p>All 3 of these lighting scenarios were using Lumen, Screen Space Reflections, and Megascans Assets. My goal was to create these scenarios using PBL (Physically Based Lighting) methods as well as work on topics such as shot composition, post processing, and color theory.</p>
+            <div class = "picture1">
+                <img src="images/LightCheatSheet.png">
+            </div>
+            <p>Using the Unity PBL Cheat Sheet, I was able to roughly get values for EVs, Lumens for my directional lights as well as temperature for the color of the lights.</p>
+        </div>
+        <div class = "general">
+            <h2>White Water Simulations</h2>
+            <p>After seeing the new water simulations in The Witcher 4 tech demo, I decided to try them out for myself. Performance wise, they are not too great in their current iteration, but as time passes this will be such a useful asset to use.</p>
+            <div class = "picture1">
+                <img src="images/Water1.png">
+            </div>
+            <p>In order to optimize the use of this very cool system in my pipelines, while I was creating basic PCG setups for this environment, I made sure to separate my forest and rocky environments so that I could automatically update collision of my water simulation whenever regenerating a new set of rocks.</p>
+            <div class = "picture1">
+                <img src="images/Water+PCG.PNG">
+            </div>
+        </div>
+        <div class = "materials">
+            <h2>Lighting Optimization</h2>
+            <p>Don't use Lumen Reflections, currently (UE5.6) they are still relatively unstable and don't provide a super clean look. Screen Space help shave off some millisconds time and still provide a nice look, especially on the water. Also, doing the bare basics such as making sure lights aren't dynamic.</p>
+            <p>A lot of my optimization came from CVARs, downsampling to settings that are considered "high" instead of the normal scalability settings of "epic"</p>
+            <div class = "picture1">
+                <img src="images/CVARsLighting.PNG">
+            </div>
+            <div class = "picture1">
+                <img src="images/LightingPerformance.PNG">
+                <img src="images/LightingPerformanceAfter.PNG">
+            </div>
+            <p>After doing said optimizations, I was able to reduce GPU times by over 4ms, which is a huge optimization. Without reducing any quality, we are able to achieve stellar results without compromising visual fidelity.</p>
+        </div>
+
+        <div class = "learned-text">
+            <h2>What I Learned</h2>
+            <ul>
+                <li><learned-titles>Performance matters way more than people think:</learned-titles> Having good performance is the one thing in a game that can tank a gameplay experience completely on it's own. Especially if assets aren't developed to work properly (looking at you deltatime) when your performance is lower than expected. Making sure that every piece of your game, from art to scripting, are well optimized and are game ready is a really important piece of development a lot of smaller indie teams miss.</li>
+                <li><learned-titles>Don't just look at the GPU:</learned-titles> Memory, disk space, the CPU; all 3 of these things are places of performance that you should look at diligently, not just the GPU. The GPU is a very important piece of that puzzle, but you don't want your performance to be bottlenecked in any sitation, not just a GPU bottleneck. Make sure to check and cleanup the rest of the threads as well.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div id="foot">
+            <div class="footer">
+                <p>Website Made By Joey Clemente</p>
+            </div>
+        </div>
+    </footer>
+    </body>
+
+    <script src="script.js"></script>
+
+</html>

@@ -427,6 +427,11 @@ nav ul li a:hover::after{
     height: auto;
 }
 
+.picturebig img{
+    max-width: 100%;
+    width: auto;
+}
+
 .picture2 video{
     width: 70%;
 }
