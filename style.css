@@ -270,6 +270,48 @@ nav ul li a:hover::after{
     padding: 100px 0;
 }
 
+#about.about-partners.freelancing-band-a {
+    padding: 100px 48px 72px;
+}
+
+#about.about-partners .about-section-title {
+    text-align: center;
+    font-size: 35px;
+    color: rgb(240, 240, 240);
+    margin: 0 0 64px;
+    padding: 0 0 16px;
+}
+
+#about.about-partners .about-col-1 {
+    padding: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about.about-partners .about-col-2 {
+    padding: 40px 48px 28px 24px;
+}
+
+#about.about-partners .about-text p {
+    margin-bottom: 28px;
+}
+
+#about.about-partners .about-text p:last-child {
+    margin-bottom: 0;
+}
+
+#about.about-partners .about-section-title projects {
+    color: rgb(32, 163, 158);
+}
+
+#about.about-partners .about-row {
+    flex-direction: row-reverse;
+    align-items: center;
+    height: auto;
+    min-height: 40vh;
+}
+
 .about-row {
     display: flex;
     justify-content: center;
@@ -615,5 +657,319 @@ nav ul li a:hover::after{
 @media (max-width: 768px) {
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+/* -------------------- Freelancing page bands -------------------- */
+.freelancing-band-a {
+    background-color: #101014;
+}
+
+.freelancing-band-b {
+    background-color: #0d0d11;
+}
+
+.freelancing-page .freelancing-hero {
+    text-align: center;
+    padding: 50px 24px 48px;
+    background-color: #0d0d11;
+    background-image: url(images/unrealbackgroundwebsite.png);
+}
+
+.freelancing-page .freelancing-hero h1 {
+    margin-top: 0;
+    font-size: 80px;
+    font-weight: bold;
+    color: rgb(240, 240, 240);
+}
+
+.freelancing-page .freelancing-hero h3 {
+    color: rgb(240, 240, 240);
+    margin-top: -30px;
+}
+
+.freelancing-page .freelancing-hero name {
+    font-size: 80px;
+    color: rgb(32, 163, 158);
+}
+
+.freelancing-page .freelancing-demo {
+    text-align: center;
+    padding: 80px 24px 64px;
+}
+
+.freelancing-page .freelancing-demo h2 {
+    color: rgb(240, 240, 240);
+    font-size: 35px;
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.freelancing-page .freelancing-demo projects {
+    color: rgb(32, 163, 158);
+}
+
+.freelancing-page #about.about-partners.freelancing-band-a {
+    background-color: #101014;
+}
+
+.freelancing-page #contact.freelancing-band-b {
+    background-color: #101014;
+}
+
+.freelancing-band-b {
+    background-color: #101014;
+}
+
+.freelancing-band-a .services-grid li {
+    background-color: #101014;
+}
+
+/* -------------------- Freelancing -------------------- */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-28px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#freelancing-services {
+    text-align: center;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 64px 24px 72px;
+}
+
+.scroll-fade-in {
+    opacity: 0;
+    transform: translateY(-28px);
+}
+
+.scroll-animate-section.is-visible .scroll-fade-in {
+    animation: fadeInDown 0.75s ease forwards;
+}
+
+#freelancing-services h2 {
+    color: rgb(240, 240, 240);
+    font-size: 35px;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+#freelancing-services.is-visible h2.scroll-fade-in {
+    animation-delay: 0.05s;
+}
+
+#freelancing-services projects {
+    color: rgb(32, 163, 158);
+}
+
+.freelancing-services-intro {
+    color: rgb(240, 240, 240);
+    font-size: 1.15em;
+    font-weight: 200;
+    line-height: 1.6;
+    max-width: 720px;
+    margin: 0 auto 40px;
+}
+
+#freelancing-services.is-visible .freelancing-services-intro {
+    animation-delay: 0.2s;
+}
+
+.services-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+}
+
+.services-grid {
+    display: contents;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.services-grid li {
+    background-color: #0d0d11;
+    border: 1px solid rgba(32, 163, 158, 0.45);
+    border-radius: 8px;
+    padding: 24px 20px;
+    color: rgb(240, 240, 240);
+    font-size: 1.1em;
+    font-weight: 300;
+    box-shadow: 0 0 6px rgba(32, 163, 158, 0.15);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#freelancing-services.is-visible .services-grid li:nth-child(1) { animation-delay: 0.35s; }
+#freelancing-services.is-visible .services-grid li:nth-child(2) { animation-delay: 0.45s; }
+#freelancing-services.is-visible .services-grid li:nth-child(3) { animation-delay: 0.55s; }
+#freelancing-services.is-visible .services-grid li:nth-child(4) { animation-delay: 0.65s; }
+#freelancing-services.is-visible .services-grid li:nth-child(5) { animation-delay: 0.75s; }
+#freelancing-services.is-visible .services-grid li:nth-child(6) { animation-delay: 0.85s; }
+
+.services-grid li:hover {
+    border-color: rgb(32, 163, 158);
+    box-shadow: 0 0 12px rgba(32, 163, 158, 0.35);
+}
+
+.services-custom {
+    grid-column: 1 / -1;
+    margin: 12px 0 0;
+    padding: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+    color: rgb(32, 163, 158);
+    font-size: 1.25em;
+    font-weight: 400;
+}
+
+#freelancing-services.is-visible .services-custom {
+    animation-delay: 1s;
+}
+
+/* Why ShaderForge */
+#freelancing-why {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 64px 56px 80px;
+}
+
+#freelancing-why h2 {
+    color: rgb(240, 240, 240);
+    font-size: 35px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    line-height: 1.3;
+    padding: 0 16px;
+}
+
+#freelancing-why projects {
+    color: rgb(32, 163, 158);
+}
+
+.freelancing-why-intro {
+    color: rgb(240, 240, 240);
+    font-size: 1.15em;
+    font-weight: 200;
+    line-height: 1.6;
+    max-width: 720px;
+    margin: 0 auto 56px;
+    padding: 0 16px;
+}
+
+#freelancing-why.is-visible h2.scroll-fade-in {
+    animation-delay: 0.05s;
+}
+
+#freelancing-why.is-visible .freelancing-why-intro {
+    animation-delay: 0.2s;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 56px;
+    row-gap: 0;
+    text-align: left;
+    padding: 8px 24px 0;
+}
+
+.why-item {
+    padding: 36px 24px 40px 28px;
+    border-left: 4px solid rgb(32, 163, 158);
+    border-bottom: 1px solid rgba(32, 163, 158, 0.2);
+    background: transparent;
+    transition: border-left-color 0.3s ease, border-left-width 0.3s ease;
+}
+
+.why-item:nth-child(3),
+.why-item:nth-child(4) {
+    border-bottom: none;
+}
+
+.why-item:hover {
+    border-left-width: 6px;
+}
+
+/* Opacity-only entrance — avoids transform conflicting with text layout on hover */
+#freelancing-why .why-item.scroll-fade-in {
+    opacity: 0;
+    transform: none;
+}
+
+#freelancing-why.is-visible .why-item.scroll-fade-in {
+    animation: whyItemFadeIn 0.75s ease forwards;
+}
+
+@keyframes whyItemFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.why-item h3 {
+    color: rgb(32, 163, 158);
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin: 0 0 14px;
+}
+
+.why-item p {
+    color: rgb(240, 240, 240);
+    font-size: 1.05em;
+    font-weight: 200;
+    line-height: 1.65;
+    margin: 0;
+}
+
+#freelancing-why.is-visible .why-item:nth-child(1) { animation-delay: 0.35s; }
+#freelancing-why.is-visible .why-item:nth-child(2) { animation-delay: 0.45s; }
+#freelancing-why.is-visible .why-item:nth-child(3) { animation-delay: 0.55s; }
+#freelancing-why.is-visible .why-item:nth-child(4) { animation-delay: 0.65s; }
+
+@media (max-width: 768px) {
+    .services-layout {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .services-custom {
+        grid-column: 1;
+    }
+
+    #freelancing-why {
+        padding: 48px 28px 64px;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        padding: 0 8px;
+    }
+
+    .why-item {
+        padding: 32px 16px 36px 24px;
+    }
+
+    .why-item:nth-child(3) {
+        border-bottom: 1px solid rgba(32, 163, 158, 0.2);
+    }
+
+    #freelancing-why h2 {
+        font-size: 28px;
     }
 }
