@@ -531,6 +531,180 @@ nav ul li a:hover::after{
     font-weight: bold;
 }
 
+/* ------------ Star Fox Project Page -------------------- */
+#info.starfox-info {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    padding: 48px 24px 96px;
+}
+
+#info.starfox-info .starfox-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 44px;
+}
+
+#info.starfox-info .starfox-hero img {
+    display: block;
+    max-width: min(96vw, 860px);
+    max-height: min(78vh, 820px);
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+    filter: drop-shadow(0 14px 36px rgba(32, 163, 158, 0.35));
+}
+
+#info.starfox-info .description-text p,
+#info.starfox-info .background-text p {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 720px;
+    font-size: 20px;
+    line-height: 1.65;
+}
+
+#info.starfox-info h3 {
+    margin-top: 32px;
+}
+
+#info.starfox-info .nda-notice {
+    max-width: 700px;
+    margin: 48px auto 0;
+    padding: 26px 32px;
+    background: linear-gradient(135deg, rgba(32, 163, 158, 0.12) 0%, rgba(32, 163, 158, 0.04) 100%);
+    border: 1px solid rgba(32, 163, 158, 0.35);
+    border-left: 4px solid rgb(32, 163, 158);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(32, 163, 158, 0.08);
+}
+
+#info.starfox-info .nda-notice p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.7;
+    color: rgb(215, 235, 233);
+}
+
+#info.starfox-info .starfox-learned {
+    margin-top: 80px;
+}
+
+#info.starfox-info .starfox-learned h2 {
+    margin-top: 0;
+    margin-bottom: 48px;
+    text-decoration: none;
+}
+
+#info.starfox-info .starfox-learned ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0 0 0 8px;
+    max-width: 820px;
+    counter-reset: starfox-lesson;
+    position: relative;
+}
+
+#info.starfox-info .starfox-learned ul::before {
+    content: "";
+    position: absolute;
+    left: 19px;
+    top: 12px;
+    bottom: 12px;
+    width: 2px;
+    background: linear-gradient(
+        to bottom,
+        rgb(32, 163, 158),
+        rgba(32, 163, 158, 0.15)
+    );
+}
+
+#info.starfox-info .starfox-learned li {
+    position: relative;
+    margin: 0 0 40px;
+    padding: 4px 0 4px 64px;
+    list-style: none;
+    background: none;
+    border: none;
+    border-radius: 0;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 1.7;
+    counter-increment: starfox-lesson;
+    transition: none;
+    box-shadow: none;
+}
+
+#info.starfox-info .starfox-learned li:last-child {
+    margin-bottom: 0;
+}
+
+#info.starfox-info .starfox-learned li::before {
+    content: counter(starfox-lesson, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(32, 163, 158);
+    background-color: #101014;
+    border: 2px solid rgb(32, 163, 158);
+    border-radius: 50%;
+    box-shadow: 0 0 12px rgba(32, 163, 158, 0.25);
+}
+
+#info.starfox-info .starfox-learned li:hover {
+    border: none;
+    box-shadow: none;
+}
+
+#info.starfox-info .starfox-learned learned-titles {
+    display: block;
+    font-size: 1.35em;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: rgb(240, 240, 240);
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(32, 163, 158, 0.3);
+}
+
+@media (max-width: 768px) {
+    #info.starfox-info {
+        padding: 32px 16px 64px;
+    }
+
+    #info.starfox-info .starfox-hero img {
+        max-width: min(98vw, 860px);
+        max-height: 65vh;
+    }
+
+    #info.starfox-info .nda-notice {
+        padding: 20px 22px;
+    }
+
+    #info.starfox-info .starfox-learned li {
+        padding-left: 56px;
+        margin-bottom: 32px;
+    }
+
+    #info.starfox-info .starfox-learned li::before {
+        width: 36px;
+        height: 36px;
+        font-size: 12px;
+    }
+}
+
 .feat-projects-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(200px, 1fr));
