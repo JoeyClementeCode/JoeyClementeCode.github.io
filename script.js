@@ -16,6 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
             rootMargin: "0px 0px -40px 0px",
         }
     );
-
+    // Hmmm
     sections.forEach((section) => observer.observe(section));
 });
